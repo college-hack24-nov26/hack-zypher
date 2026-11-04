@@ -1,0 +1,20 @@
+{
+  "name": "nagarniti",
+  "version": "1.0.0",
+  "description": "NagarNiti - Civic Platform for Satara City",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "server:dev": "npm --prefix server run dev",
+    "client:dev": "npm --prefix client run dev",
+    "server:start": "npm --prefix server run start",
+    "client:build": "npm --prefix client run build",
+    "seed": "npm --prefix server run seed",
+    "seed:demo": "npm --prefix server run seed:demo",
+    "lint": "npm --prefix server run lint && npm --prefix client run lint",
+    "format": "npm --prefix server run format && npm --prefix client run format"
+  }
+}
